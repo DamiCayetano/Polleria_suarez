@@ -1,5 +1,5 @@
 function enlaces(icono, ruta, nombre){
-    const ROUTE_BASE = "http://127.0.0.1:5500/"
+    const ROUTE_BASE = "https://damicayetano.github.io/Polleria_suarez/"
 
     let Sidebar_enlaces = 
     `<div class="enlace">
