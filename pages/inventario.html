@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/sidebar.css">
+    <link rel="stylesheet" href="../assets/css/inventario.css">
+</head>
+<body>
+    <main>
+        <aside class="sidebar" id="sidebar">
+
+        </aside>
+
+        <section class="nav-bar-mobile">
+            <img src="../assets/img/logo.png" alt="Logo">
+            <img class="icono-nav" id="mostrar-menu" src="../assets/img/bx-menu-alt-right.svg.png" alt="Menú">
+        </section>
+        
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./menu.html">Menú</a></li>
+            <li><a href="./gestion_de_pedidos.html">Gestión/Pedidos</a></li>
+            <li><a href="./inventario.html">Inventario</a></li>
+        </ul>
+
+        <article class="contenido">
+            <section class="contenido-buscar">
+                <input type="text" placeholder="Parrillas">
+                <button>Buscar</button>
+            </section>
+            <section class="contenido-icons">
+                <div class="icons">
+                    <img src="../assets/img/inventario/bx-list-ul.svg.png" alt="calendar">
+                    <a href="">Listar</a>
+                </div>
+                <div class="icons">
+                    <img src="../assets/img/inventario/bxs-add-to-queue.svg.png" alt="history">
+                    <a href="./registrar.html" id="abrir-modal">Registrar nuevo producto</a>
+                </div>
+            </section>
+            <table class="contenido-table">
+                <thead>
+                    <tr>
+                        <th>Productos</th>
+                        <th class="th-ocultar">Categoria</th>
+                        <th>Cantidad</th>
+                        <th class="th-ocultar">Precio</th>
+                        <th class="th-ocultar">Ingreso</th>
+                        <th class="th-ocultar">Vencimiento</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="td-pedido">
+                            <img src="../assets/img/inventario/producto.png" alt="pollo">
+                            <p>Pollo crudo</p>
+                        </td>
+                        <td class="th-ocultar">Carnes</td>
+                        <td>21</td>
+                        <td class="th-ocultar">201.00</td>
+                        <td class="th-ocultar">14/03/25</td>
+                        <td class="th-ocultar">25/05/25</td>
+                        <td>
+                            <a href="./editar.html"><img src="../assets/img/inventario/editar.png" alt=""></a>
+                            <img src="../assets/img/inventario/eliminar.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-pedido">
+                            <img src="../assets/img/inventario/producto.png" alt="pollo">
+                            <p>Pollo crudo</p>
+                        </td>
+                        <td class="th-ocultar">Carnes</td>
+                        <td>21</td>
+                        <td class="th-ocultar">201.00</td>
+                        <td class="th-ocultar">14/03/25</td>
+                        <td class="th-ocultar">25/05/25</td>
+                        <td>
+                            <a href="./editar.html"><img src="../assets/img/inventario/editar.png" alt=""></a>
+                            <img src="../assets/img/inventario/eliminar.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-pedido">
+                            <img src="../assets/img/inventario/producto.png" alt="pollo">
+                            <p>Pollo crudo</p>
+                        </td>
+                        <td class="th-ocultar">Carnes</td>
+                        <td>21</td>
+                        <td class="th-ocultar">201.00</td>
+                        <td class="th-ocultar">14/03/25</td>
+                        <td class="th-ocultar">25/05/25</td>
+                        <td>
+                            <a href="./editar.html"><img src="../assets/img/inventario/editar.png" alt=""></a>
+                            <img src="../assets/img/inventario/eliminar.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-pedido">
+                            <img src="../assets/img/inventario/producto.png" alt="pollo">
+                            <p>Pollo crudo</p>
+                        </td>
+                        <td class="th-ocultar">Carnes</td>
+                        <td>21</td>
+                        <td class="th-ocultar">201.00</td>
+                        <td class="th-ocultar">14/03/25</td>
+                        <td class="th-ocultar">25/05/25</td>
+                        <td>
+                            <a href="./editar.html"><img src="../assets/img/inventario/editar.png" alt=""></a>
+                            <img src="../assets/img/inventario/eliminar.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-pedido">
+                            <img src="../assets/img/inventario/producto.png" alt="pollo">
+                            <p>Pollo crudo</p>
+                        </td>
+                        <td class="th-ocultar">Carnes</td>
+                        <td>21</td>
+                        <td class="th-ocultar">201.00</td>
+                        <td class="th-ocultar">14/03/25</td>
+                        <td class="th-ocultar">25/05/25</td>
+                        <td>
+                            <a href="./editar.html"><img src="../assets/img/inventario/editar.png" alt=""></a>
+                            <img src="../assets/img/inventario/eliminar.png" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </main>
+
+    <script src="../assets/js/mostrar_menu.js"></script>
+    <script type="module" src="../javascript/render_sidebar.js"></script>
+    <script type="module" src="../javascript/render_enlaces.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@import url(variables.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+}
+
+.contenido{
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    padding: 40px 0px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 786px){
+    main{
+        flex-direction: column;
+    }
+}

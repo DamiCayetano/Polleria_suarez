@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../frontend/assets/css/index.css">
+</head>
+<body>
+    <section class="login">
+            <div class="banner">
+                <img src="../frontend/assets/img/banner.png" alt="banner">
+            </div>
+            <div class="form">
+                <div class="form_logo">
+                    <img src="../frontend/assets/img/logo.png" alt="logo">
+                </div>
+                <div class="form_title">
+                    <h1>BIENVENIDO AL SISTEMA DE <br> LA POLLERIA</h1>
+                </div>
+                <div class="form_campos">
+                    <form action="" id="loginForm">
+                        <section class="input_form">
+                            <input type="text" placeholder="Ingresar Usuario">
+                        </section><br>
+                        <section class="input_form">
+                            <input type="password" placeholder="Ingresar Contraseña">
+                        </section>
+                        <section class="input_submit">
+                            <input type="submit" value="Inicar Sesión" id="btnIniciar">
+                        </section>
+                    </form>
+                </div>
+            </div>
+    </section>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Detiene el envío del formulario
+            window.location.href = "pages/dashboard.html"; // Redirige a la nueva página
+        });
+    </script>
+</body>
+</html>

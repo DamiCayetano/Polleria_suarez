@@ -1,0 +1,36 @@
+:root{
+
+    /* Paleta de colores */
+    --color-primario: #FF3622;
+    --color-secundario: #FFB22C;
+    --color-terciario: #9C542D;
+    --color-titulo: #262626;
+    --color-subtitulo: #3C3C3C;
+    --color-texto: #757575;
+    --color-texto-categoria: #202020;
+    --color-texto-boton: #FFFFFF;
+    --color-texto-orange: #F07E40;
+    --color-fondo-orange-light: #FFE5E3;
+    --color-fondo-orange-strong: #262424;
+    --color-fondo-grey-light: #969696;
+    --color-border-grey-light: #ECECEC;
+    --color-shadow-orange-transparency: 0px 4px 40px -10px rgba(255, 172, 164, 30%);
+
+
+    /* Tamaño de fuentes*/
+    --tamano-encabezado: 32px;
+    --tamano-titulo: 24px;
+    --tamano-subtitulo: 20px;
+    --tamano-categoria: 18px;
+    --tamano-enlaces: 14px;
+    --tamano-texto-pequeno: 12px;
+    --tamano-texto: 15px;
+    --tamano-texto-boton: 16px;
+
+
+    /* Peso de fuentes */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+}

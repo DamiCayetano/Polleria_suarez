@@ -1,0 +1,264 @@
+@import url(variables.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dashboard-contenido-superior{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+
+.dashboard-banner{
+    position: relative;
+    display: inline-block;
+}
+
+.dashboard-banner img{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+.dashboard-banner h2{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: var(--color-texto-boton);
+    font-size: var(--tamano-encabezado);
+    font-weight: var(--font-weight-bold);
+}
+
+.dashboard-banner h3{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    color: var(--color-texto-boton);
+    font-size: var(--tamano-subtitulo);
+    font-weight: var(--font-weight-medium);
+}
+
+.banner-botones{
+    display: flex;
+    position: absolute;
+    gap: 16px;
+    top: 75%;
+    left: 40%;
+}
+
+.boton-pedidos{
+    text-decoration: none;
+    background-color: var(--color-primario);
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: var(--color-texto-boton);
+    font-size: var(--tamano-texto-boton);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.boton-menu{
+    text-decoration: none;
+    background-color: var(--color-fondo-grey-light);
+    padding: 10px 12px;
+    border-radius: 10px;
+    color: var(--color-texto-boton);
+    font-size: var(--tamano-texto-boton);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.personal-titulo{
+    display: flex;
+    align-items: center;
+    gap: 155px;
+}
+
+.personal-titulo h3{
+    font-size: var(--tamano-subtitulo);
+    color: var(--color-titulo);
+}
+
+.personal-titulo a{
+    text-decoration: none;
+    color: var(--color-primario);
+}
+
+.personal-descripcion{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.descripcion-nombre{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.descripcion-nombre h3{
+    font-size: var(--tamano-texto);
+    color: var(--tamano-texto-boton);
+    font-weight: var(--font-weight-medium);
+}
+
+.descripcion-rol p{
+    color: var(--color-texto);
+}
+
+.dashboard-contenido-inferior{
+    justify-content: center;
+    display: flex;
+    gap: 80px;
+}
+
+.dashboard-pedidos{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.dashboard-pedidos h2{
+    font-size: var(--tamano-texto);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-titulo);
+}
+
+.pedidos{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.pedidos-card{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-descripcion{
+    width: 310px;
+    padding: 10px 0 10px 120px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: var(--color-shadow-orange-transparency);
+}
+
+.card-descripcion h3{
+    font-size: var(--tamano-texto-boton);
+    color: var(--color-titulo);
+}
+
+.card-descripcion p{
+    font-size: var( --tamano-texto-pequeno);
+    color: var(--color-fondo-grey-light);
+}
+.img-pedidos{
+    width: 140px;
+    position: absolute;
+    left: 0;
+}
+
+.dashboard-estadisticas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 25px;
+}
+
+.numeral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estadisticas-ventas{
+    background-color: var(--color-secundario);
+    text-align: center;
+    width: 140px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    color: var(--color-texto-boton);
+}
+
+.estadisticas-pedidos{
+    background-color: var(--color-primario);
+    text-align: center;
+    width: 140px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    color: var(--color-texto-boton);
+}
+
+@media screen and (max-width: 786px) {
+
+    .dashboard{
+        padding: 0px 5px;
+        gap: 0px;
+        flex-direction: column;
+    }
+    
+    .logo img{
+        width: 60px;
+    }
+
+    .dashboard-banner img{
+        max-width: 420px;
+    }
+    
+    .dashboard-banner h2{
+        font-size: var(--tamano-subtitulo);
+        left: 3%;
+    }
+
+    .dashboard-banner h3{
+        left: 3%;
+        top: 43%;
+    }
+
+    .banner-botones{
+        left: 25%;
+        top: 70%;
+    }
+
+    .dashboard-contenido-superior{
+        flex-direction: column;
+    }
+
+    .dashboard-personal{
+        display: none;
+    }
+
+    .dashboard-contenido-inferior{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .card-descripcion{
+        padding: 10px 0 10px 70px;
+    }
+
+    .dashboard-pedidos h2{
+        padding: 0px 15px;
+    }
+    .pedidos{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .dashboard-estadisticas{
+        flex-direction: row;
+        padding: 20px 17px;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+}
