@@ -1,7 +1,7 @@
 let Sidebar_enlaces = [
     {
         icono: "bxs-dashboard.svg",
-        ruta: "app/frontend/pages/dashboard.html",
+        ruta: "pages/dashboard.html",
         nombre: "Dashboard"
     },
 
@@ -13,13 +13,13 @@ let Sidebar_enlaces = [
 
     {
         icono: "bxs-notepad.svg",
-        ruta: "app/frontend/pages/gestion_de_pedidos.html",
+        ruta: "pages/gestion_de_pedidos.html",
         nombre: "Gestión/Pedidos"
     },
 
     {
         icono: "bx-package.svg",
-        ruta: "app/frontend/pages/inventario.html",
+        ruta: "pages/inventario.html",
         nombre: "Inventario"
     }
     
