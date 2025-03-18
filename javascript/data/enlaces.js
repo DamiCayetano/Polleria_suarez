@@ -7,7 +7,7 @@ let Sidebar_enlaces = [
 
     {
         icono: "bx-restaurant.svg",
-        ruta: "app/frontend/pages/menu.html",
+        ruta: "pages/menu.html",
         nombre: "Menú"
     },
 
